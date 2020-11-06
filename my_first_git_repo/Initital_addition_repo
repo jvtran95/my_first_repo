@@ -1,0 +1,171 @@
+Last login: Thu Nov  5 21:54:54 on ttys000
+
+The default interactive shell is now zsh.
+To update your account to use zsh, please run `chsh -s /bin/zsh`.
+For more details, please visit https://support.apple.com/kb/HT208050.
+Johns-MacBook-Air-4:~ johntran$ git status
+fatal: not a git repository (or any of the parent directories): .git
+Johns-MacBook-Air-4:~ johntran$ cd "/Users/johntran/Desktop/DS4A/DS4A_Code/git-take-home-assignment"
+Johns-MacBook-Air-4:git-take-home-assignment johntran$ git init .
+Reinitialized existing Git repository in /Users/johntran/Desktop/DS4A/DS4A_Code/git-take-home-assignment/.git/
+Johns-MacBook-Air-4:git-take-home-assignment johntran$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+	new file:   .DS_Store
+	new file:   Git Take-Home Assignment.pdf
+	new file:   my_first_git_repo/.DS_Store
+	new file:   my_first_git_repo/file1.txt
+	new file:   my_first_git_repo/file2.txt
+	new file:   my_first_git_repo/file3.txt
+	new file:   my_first_git_repo/folder1/control.txt
+	new file:   my_first_git_repo/folder1/version.txt
+	new file:   my_first_git_repo/folder2/.DS_Store
+	new file:   my_first_git_repo/folder2/file6.txt
+	new file:   my_first_git_repo/folder2/file7.txt
+	new file:   my_first_git_repo/folder2/file8.txt
+	new file:   my_first_git_repo/folder2/folder4/coffee.txt
+	new file:   my_first_git_repo/folder2/folder4/likes.txt
+	new file:   my_first_git_repo/folder2/folder4/natesh.txt
+	new file:   my_first_git_repo/folder2/folder5/DO_NOT_ADD.txt
+	new file:   my_first_git_repo/folder2/folder5/file4.txt
+	new file:   my_first_git_repo/folder2/folder5/file5.txt
+	new file:   my_first_git_repo/folder2/folder6/do_not.txt
+	new file:   my_first_git_repo/folder2/folder6/in_file_names.txt
+	new file:   my_first_git_repo/folder2/folder6/include_spaces.txt
+	new file:   my_first_git_repo/folder3/EXCITING_FILE.txt
+
+Johns-MacBook-Air-4:git-take-home-assignment johntran$ git add .
+Johns-MacBook-Air-4:git-take-home-assignment johntran$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+	new file:   .DS_Store
+	new file:   Git Take-Home Assignment.pdf
+	new file:   my_first_git_repo/.DS_Store
+	new file:   my_first_git_repo/file1.txt
+	new file:   my_first_git_repo/file2.txt
+	new file:   my_first_git_repo/file3.txt
+	new file:   my_first_git_repo/folder1/control.txt
+	new file:   my_first_git_repo/folder1/version.txt
+	new file:   my_first_git_repo/folder2/.DS_Store
+	new file:   my_first_git_repo/folder2/file6.txt
+	new file:   my_first_git_repo/folder2/file7.txt
+	new file:   my_first_git_repo/folder2/file8.txt
+	new file:   my_first_git_repo/folder2/folder4/coffee.txt
+	new file:   my_first_git_repo/folder2/folder4/likes.txt
+	new file:   my_first_git_repo/folder2/folder4/natesh.txt
+	new file:   my_first_git_repo/folder2/folder5/DO_NOT_ADD.txt
+	new file:   my_first_git_repo/folder2/folder5/file4.txt
+	new file:   my_first_git_repo/folder2/folder5/file5.txt
+	new file:   my_first_git_repo/folder2/folder6/do_not.txt
+	new file:   my_first_git_repo/folder2/folder6/in_file_names.txt
+	new file:   my_first_git_repo/folder2/folder6/include_spaces.txt
+	new file:   my_first_git_repo/folder3/EXCITING_FILE.txt
+
+Johns-MacBook-Air-4:git-take-home-assignment johntran$ git rm --cached my_first_git_repo/folder2/folder5/DO_NOT_ADD.txt
+rm 'my_first_git_repo/folder2/folder5/DO_NOT_ADD.txt'
+Johns-MacBook-Air-4:git-take-home-assignment johntran$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+	new file:   .DS_Store
+	new file:   Git Take-Home Assignment.pdf
+	new file:   my_first_git_repo/.DS_Store
+	new file:   my_first_git_repo/file1.txt
+	new file:   my_first_git_repo/file2.txt
+	new file:   my_first_git_repo/file3.txt
+	new file:   my_first_git_repo/folder1/control.txt
+	new file:   my_first_git_repo/folder1/version.txt
+	new file:   my_first_git_repo/folder2/.DS_Store
+	new file:   my_first_git_repo/folder2/file6.txt
+	new file:   my_first_git_repo/folder2/file7.txt
+	new file:   my_first_git_repo/folder2/file8.txt
+	new file:   my_first_git_repo/folder2/folder4/coffee.txt
+	new file:   my_first_git_repo/folder2/folder4/likes.txt
+	new file:   my_first_git_repo/folder2/folder4/natesh.txt
+	new file:   my_first_git_repo/folder2/folder5/file4.txt
+	new file:   my_first_git_repo/folder2/folder5/file5.txt
+	new file:   my_first_git_repo/folder2/folder6/do_not.txt
+	new file:   my_first_git_repo/folder2/folder6/in_file_names.txt
+	new file:   my_first_git_repo/folder2/folder6/include_spaces.txt
+	new file:   my_first_git_repo/folder3/EXCITING_FILE.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	my_first_git_repo/folder2/folder5/DO_NOT_ADD.txt
+
+Johns-MacBook-Air-4:git-take-home-assignment johntran$ git commit
+hint: Waiting for your editor to close the file... 
+Initital addition of files for my first repo
+
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+#
+# Committer: John Tran <johntran@Johns-MacBook-Air-4.local>
+#
+# On branch master
+#
+# Initial commit
+#
+# Changes to be committed:
+#       new file:   .DS_Store
+#       new file:   Git Take-Home Assignment.pdf
+#       new file:   my_first_git_repo/.DS_Store
+#       new file:   my_first_git_repo/file1.txt
+#       new file:   my_first_git_repo/file2.txt
+#       new file:   my_first_git_repo/file3.txt
+#       new file:   my_first_git_repo/folder1/control.txt
+#       new file:   my_first_git_repo/folder1/version.txt
+#       new file:   my_first_git_repo/folder2/.DS_Store
+#       new file:   my_first_git_repo/folder2/file6.txt
+#       new file:   my_first_git_repo/folder2/file7.txt
+#       new file:   my_first_git_repo/folder2/file8.txt
+#       new file:   my_first_git_repo/folder2/folder4/coffee.txt
+#       new file:   my_first_git_repo/folder2/folder4/likes.txt
+#       new file:   my_first_git_repo/folder2/folder4/natesh.txt
+#       new file:   my_first_git_repo/folder2/folder5/file4.txt
+#       new file:   my_first_git_repo/folder2/folder5/file5.txt
+#       new file:   my_first_git_repo/folder2/folder6/do_not.txt
+#       new file:   my_first_git_repo/folder2/folder6/in_file_names.txt
+#       new file:   my_first_git_repo/folder2/folder6/include_spaces.txt
+#       new file:   my_first_git_repo/folder3/EXCITING_FILE.txt
+
+# Untracked files:
+#       my_first_git_repo/folder2/folder5/DO_NOT_ADD.txt
+#
+~                                                                                                                                                                                                           
+~                                                                                                                                                                                                           
+~                                                                                                                                                                                                           
+~                                                                                                                                                                                                           
+~                                                                                                                                                                                                           
+~                                                                                                                                                                                                           
+~                                                                                                                                                                                                           
+~                                                                                                                                                                                                           
+~                                                                                                                                                                                                           
+~                                                                                                                                                                                                           
+~                                                                                                                                                                                                           
+~                                                                                                                                                                                                           
+~                                                                                                                                                                                                           
+~                                                                                                                                                                                                           
+~                                                                                                                                                                                                           
+~                                                                                                                                                                                                           
+~                                                                                                                                                                                                           
+~                                                                                                                                                                                                           
+~                                                                                                                                                                                                           
+~                                                                                                                                                                                                           
+~                                                                                                                                                                                                           
+~                                                                                                                                                                                                           
+~                                                                                                                                                                                                           
+~                                                                                                                                                                                                           
+~                                                                                                                                                                                                           
+-- INSERT --
